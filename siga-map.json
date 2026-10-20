@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -51,6 +51,12 @@
           "name": "Manage Property Amenities",
           "description": "Maintain a guest-oriented representation of property amenities, drawing on equipment and consumables to support accurate listings and guest communications.",
           "status": "conceptual"
+        },
+        {
+          "id": "d1c6",
+          "name": "Manage Property Documents",
+          "description": "Organize, classify and monitor property-related documents, including their validity and compliance requirements.",
+          "status": "existing"
         }
       ]
     },
@@ -61,28 +67,27 @@
       "capabilities": [
         {
           "id": "d2c1",
-          "name": "Traveler Profiles",
+          "name": "Manage Traveler Relationships",
+          "description": "Maintain traveler profiles, contact information and stay history to support personalized hospitality and ongoing guest relationships.",
           "status": "existing"
         },
         {
           "id": "d2c2",
-          "name": "Enquiries & Reservations",
+          "name": "Manage Enquiries & Reservations",
+          "description": "Manage booking enquiries, reservations, commercial details and booking status throughout the reservation lifecycle.",
           "status": "existing"
         },
         {
           "id": "d2c3",
-          "name": "Guest Journey",
-          "status": "existing"
-        },
-        {
-          "id": "d2c4",
-          "name": "Feedback Intelligence",
+          "name": "Manage Guest Journey",
+          "description": "Support and coordinate the guest experience across pre-arrival, in-stay and post-stay interactions, maintaining continuity and relevant context throughout the journey.",
           "status": "in_development"
         },
         {
-          "id": "d2c5",
-          "name": "Experience Insights",
-          "status": "conceptual"
+          "id": "d2c4",
+          "name": "Understand Guest Feedback",
+          "description": "Collect, interpret and analyze guest feedback to understand experiences, identify recurring themes and support service improvements.",
+          "status": "existing"
         }
       ]
     },
