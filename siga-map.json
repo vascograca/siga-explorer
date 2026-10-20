@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -24,27 +24,32 @@
       "capabilities": [
         {
           "id": "d1c1",
-          "name": "House & Property Profiles",
+          "name": "Manage Property Information & Knowledge",
+          "description": "Maintain structured information and contextual knowledge about each property, including its characteristics, spaces and relevant history.",
           "status": "existing"
         },
         {
           "id": "d1c2",
-          "name": "Amenities & Equipment",
+          "name": "Manage Property Inventory",
+          "description": "Register and manage property-specific equipment and assets, associating each inventory item with an equipment type and a property area to support operational activities.",
           "status": "existing"
         },
         {
           "id": "d1c3",
-          "name": "Image Asset Library",
+          "name": "Manage Property Media",
+          "description": "Organize and maintain property images, renditions and multilingual descriptive metadata.",
           "status": "existing"
         },
         {
           "id": "d1c4",
-          "name": "Multilingual Media Metadata",
-          "status": "in_development"
+          "name": "Manage Consumables",
+          "description": "Define, track and replenish consumable supplies required for property operations and guest stays.",
+          "status": "conceptual"
         },
         {
           "id": "d1c5",
-          "name": "Property Knowledge",
+          "name": "Manage Property Amenities",
+          "description": "Maintain a guest-oriented representation of property amenities, drawing on equipment and consumables to support accurate listings and guest communications.",
           "status": "conceptual"
         }
       ]
