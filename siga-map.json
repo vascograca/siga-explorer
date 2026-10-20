@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -229,27 +229,32 @@
       "capabilities": [
         {
           "id": "d7c1",
-          "name": "Power Automate",
+          "name": "Understand & Structure Information",
+          "description": "Interpret and transform unstructured information, such as messages, guest feedback, observations and documents, into structured knowledge usable by SIGA.",
           "status": "existing"
         },
         {
           "id": "d7c2",
-          "name": "Observer Intelligence",
+          "name": "Build & Apply Context",
+          "description": "Assemble and interpret relevant information about properties, people, stays, events and decisions to support situation-aware interactions.",
           "status": "in_development"
         },
         {
           "id": "d7c3",
-          "name": "Guest Feedback Processor",
+          "name": "Generate Insights & Recommendations",
+          "description": "Identify patterns, risks and opportunities and suggest context-informed decisions or next steps.",
           "status": "in_development"
         },
         {
           "id": "d7c4",
-          "name": "Copilot Studio Agents",
-          "status": "conceptual"
+          "name": "Orchestrate Actions & Workflows",
+          "description": "Coordinate and execute processes through rules, automation and progressively intelligent workflows, with human oversight where appropriate.",
+          "status": "existing"
         },
         {
           "id": "d7c5",
-          "name": "Learning & Recommendations",
+          "name": "Learn & Improve from Experience",
+          "description": "Use outcomes, feedback and decision history to progressively improve operational knowledge, recommendations and practices.",
           "status": "conceptual"
         }
       ]
