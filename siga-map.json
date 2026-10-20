@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -119,12 +119,6 @@
           "name": "Manage Operational Observations",
           "description": "Capture, classify and follow up operational observations, transforming identified issues, quality risks and improvement ideas into actionable outcomes.",
           "status": "in_development"
-        },
-        {
-          "id": "d3c5",
-          "name": "Manage Operational Actions",
-          "description": "Register, assign, track and document operational actions across properties, responsibilities and execution stages.",
-          "status": "existing"
         }
       ]
     },
