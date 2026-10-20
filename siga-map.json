@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -259,27 +259,32 @@
       "capabilities": [
         {
           "id": "d8c1",
-          "name": "Azure SQL",
+          "name": "Manage Data Persistence & Access",
+          "description": "Provide reliable structured data storage, retrieval and access to support SIGA's operational and analytical capabilities.",
           "status": "existing"
         },
         {
           "id": "d8c2",
-          "name": "Power Apps",
+          "name": "Deliver Application Experiences",
+          "description": "Provide user interfaces and application experiences through which users interact with SIGA's capabilities.",
           "status": "existing"
         },
         {
           "id": "d8c3",
-          "name": "Azure Functions",
+          "name": "Execute Backend Services",
+          "description": "Run application logic, background processing and technical services required by SIGA's functional capabilities.",
           "status": "existing"
         },
         {
           "id": "d8c4",
-          "name": "Blob Storage",
+          "name": "Manage Digital Assets & Storage",
+          "description": "Store, retrieve and manage files and digital assets required by the platform.",
           "status": "existing"
         },
         {
           "id": "d8c5",
-          "name": "GitHub & Governance",
+          "name": "Manage Platform Development & Governance",
+          "description": "Support source control, development practices, deployment, configuration and technical governance throughout the platform lifecycle.",
           "status": "existing"
         }
       ]
