@@ -1,0 +1,277 @@
+{
+  "model": "SIGA Knowledge Model",
+  "version": "0.1.0",
+  "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
+  "layers": [
+    {
+      "id": "record",
+      "name": "System of Record"
+    },
+    {
+      "id": "action",
+      "name": "System of Action"
+    },
+    {
+      "id": "intelligence",
+      "name": "System of Intelligence"
+    }
+  ],
+  "domains": [
+    {
+      "id": "d1",
+      "name": "Property & Assets",
+      "layer": "record",
+      "capabilities": [
+        {
+          "id": "d1c1",
+          "name": "House & Property Profiles",
+          "status": "existing"
+        },
+        {
+          "id": "d1c2",
+          "name": "Amenities & Equipment",
+          "status": "existing"
+        },
+        {
+          "id": "d1c3",
+          "name": "Image Asset Library",
+          "status": "existing"
+        },
+        {
+          "id": "d1c4",
+          "name": "Multilingual Media Metadata",
+          "status": "in_development"
+        },
+        {
+          "id": "d1c5",
+          "name": "Property Knowledge",
+          "status": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "name": "Traveler & Hospitality",
+      "layer": "record",
+      "capabilities": [
+        {
+          "id": "d2c1",
+          "name": "Traveler Profiles",
+          "status": "existing"
+        },
+        {
+          "id": "d2c2",
+          "name": "Enquiries & Reservations",
+          "status": "existing"
+        },
+        {
+          "id": "d2c3",
+          "name": "Guest Journey",
+          "status": "existing"
+        },
+        {
+          "id": "d2c4",
+          "name": "Feedback Intelligence",
+          "status": "in_development"
+        },
+        {
+          "id": "d2c5",
+          "name": "Experience Insights",
+          "status": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "Operations",
+      "layer": "action",
+      "capabilities": [
+        {
+          "id": "d3c1",
+          "name": "ActionLog",
+          "status": "existing"
+        },
+        {
+          "id": "d3c2",
+          "name": "Action Programs",
+          "status": "existing"
+        },
+        {
+          "id": "d3c3",
+          "name": "Turnover & Preparation",
+          "status": "existing"
+        },
+        {
+          "id": "d3c4",
+          "name": "Observer",
+          "status": "in_development"
+        },
+        {
+          "id": "d3c5",
+          "name": "Suggested Operational Actions",
+          "status": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "name": "StoryHub",
+      "layer": "intelligence",
+      "capabilities": [
+        {
+          "id": "d4c1",
+          "name": "Communication Templates",
+          "status": "existing"
+        },
+        {
+          "id": "d4c2",
+          "name": "Context Model",
+          "status": "in_development"
+        },
+        {
+          "id": "d4c3",
+          "name": "Story Anatomy",
+          "status": "conceptual"
+        },
+        {
+          "id": "d4c4",
+          "name": "Decision Memory",
+          "status": "conceptual"
+        },
+        {
+          "id": "d4c5",
+          "name": "Contextual Communication Agent",
+          "status": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "name": "Finance & Performance",
+      "layer": "record",
+      "capabilities": [
+        {
+          "id": "d5c1",
+          "name": "Revenue Records",
+          "status": "existing"
+        },
+        {
+          "id": "d5c2",
+          "name": "Expenses & Accounting",
+          "status": "existing"
+        },
+        {
+          "id": "d5c3",
+          "name": "Owner Reporting",
+          "status": "in_development"
+        },
+        {
+          "id": "d5c4",
+          "name": "ADR & Occupancy Analytics",
+          "status": "existing"
+        },
+        {
+          "id": "d5c5",
+          "name": "Commercial Intelligence",
+          "status": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "name": "Integrations",
+      "layer": "action",
+      "capabilities": [
+        {
+          "id": "d6c1",
+          "name": "Beds24",
+          "status": "in_development"
+        },
+        {
+          "id": "d6c2",
+          "name": "PriceLabs",
+          "status": "in_development"
+        },
+        {
+          "id": "d6c3",
+          "name": "Airbnb / VRBO Channels",
+          "status": "in_development"
+        },
+        {
+          "id": "d6c4",
+          "name": "WordPress Media",
+          "status": "in_development"
+        },
+        {
+          "id": "d6c5",
+          "name": "External APIs",
+          "status": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "name": "AI & Automation",
+      "layer": "intelligence",
+      "capabilities": [
+        {
+          "id": "d7c1",
+          "name": "Power Automate",
+          "status": "existing"
+        },
+        {
+          "id": "d7c2",
+          "name": "Observer Intelligence",
+          "status": "in_development"
+        },
+        {
+          "id": "d7c3",
+          "name": "Guest Feedback Processor",
+          "status": "in_development"
+        },
+        {
+          "id": "d7c4",
+          "name": "Copilot Studio Agents",
+          "status": "conceptual"
+        },
+        {
+          "id": "d7c5",
+          "name": "Learning & Recommendations",
+          "status": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "d8",
+      "name": "Platform & Architecture",
+      "layer": "action",
+      "capabilities": [
+        {
+          "id": "d8c1",
+          "name": "Azure SQL",
+          "status": "existing"
+        },
+        {
+          "id": "d8c2",
+          "name": "Power Apps",
+          "status": "existing"
+        },
+        {
+          "id": "d8c3",
+          "name": "Azure Functions",
+          "status": "existing"
+        },
+        {
+          "id": "d8c4",
+          "name": "Blob Storage",
+          "status": "existing"
+        },
+        {
+          "id": "d8c5",
+          "name": "GitHub & Governance",
+          "status": "existing"
+        }
+      ]
+    }
+  ]
+}
