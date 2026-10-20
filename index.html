@@ -7,16 +7,24 @@ if(level===2){
  [['','All systems'],...model.layers.map(l=>[l.id,l.name])].forEach(([v,t])=>{const o=E('option',t);o.value=v;systemFilter.append(o)});
  systemFilter.value=selectedLayer||'';systemFilter.onchange=()=>{selectedLayer=systemFilter.value||null;render()};controls.append(systemFilter)
 }else{
- const domainFilter=E('select');domainFilter.setAttribute('aria-label','Select domain');
- [['','Select domain'],...model.domains.map(d=>[d.id,d.name])].forEach(([v,t])=>{const o=E('option',t);o.value=v;domainFilter.append(o)});
+ const domainFilter=E('select');domainFilter.setAttribute('aria-label','Filter by domain');
+ [['','All Domains'],...model.domains.map(d=>[d.id,d.name])].forEach(([v,t])=>{const o=E('option',t);o.value=v;domainFilter.append(o)});
  domainFilter.value=selected||'';domainFilter.onchange=()=>{selected=domainFilter.value||null;selectedLayer=selected?model.domains.find(d=>d.id===selected).layer:null;render()};controls.append(domainFilter);
- search=E('input');search.placeholder='Search capabilities';search.setAttribute('aria-label','Search capabilities');search.disabled=!selected;controls.append(search);
+ search=E('input');search.placeholder='Search capabilities';search.setAttribute('aria-label','Search capabilities');controls.append(search);
  const filter=E('select');filter.setAttribute('aria-label','Filter maturity');
  [['all','All statuses'],['existing','Existing'],['in_development','In development'],['conceptual','Conceptual']].forEach(([v,t])=>{const o=E('option',t);o.value=v;filter.append(o)});
- filter.value=status;filter.disabled=!selected;filter.onchange=()=>{status=filter.value;show()};controls.append(filter)
+ filter.value=status;filter.onchange=()=>{status=filter.value;show()};controls.append(filter)
 }
 view.append(controls);const body=E('div');view.append(body);if(search)search.oninput=show;function show(){body.replaceChildren();const q=search?search.value.toLowerCase():'';if(level===2){const grid=E('div',undefined,'grid');model.domains.filter(d=>!selectedLayer||d.layer===selectedLayer).forEach(d=>grid.append(B(d.name+' · '+d.capabilities.length+' capabilities',()=>{selected=d.id;selectedLayer=d.layer;level=3;render()},'tile')));body.append(grid);return}
-if(!selected){body.append(E('p','Select a domain to explore its capabilities.'));return}
-const d=model.domains.find(d=>d.id===selected);body.append(E('h2',d.name));d.capabilities.filter(c=>(status==='all'||c.status===status)&&(c.name+' '+(c.description||'')).toLowerCase().includes(q)).forEach(c=>{const row=E('div',undefined,'cap');const detail=E('div');add(detail,E('strong',c.name));if(c.description)add(detail,E('div',c.description,'cap-description'));row.append(detail);const st=E('span');add(st,E('span',undefined,'dot '+c.status),E('small',c.status.replace('_',' ')));row.append(st);body.append(row)})}show()}
+const domains=selected?model.domains.filter(d=>d.id===selected):model.domains;
+let count=0;
+domains.forEach(d=>{
+ const matches=d.capabilities.filter(c=>(status==='all'||c.status===status)&&(c.name+' '+(c.description||'')).toLowerCase().includes(q));
+ if(!matches.length)return;
+ count+=matches.length;body.append(E('h2',d.name));
+ matches.forEach(c=>{const row=E('div',undefined,'cap');const detail=E('div');add(detail,E('strong',c.name));if(c.description)add(detail,E('div',c.description,'cap-description'));row.append(detail);const st=E('span');add(st,E('span',undefined,'dot '+c.status),E('small',c.status.replace('_',' ')));row.append(st);body.append(row)})
+});
+if(!count)body.append(E('p','No capabilities match the selected filters.'));
+}show()}
 fetch('./siga-map.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{model=d;document.getElementById('footer').textContent=d.status_note;render()}).catch(e=>{view.textContent='Unable to load siga-map.json: '+e.message});
 </script></body></html>
