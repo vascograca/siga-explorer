@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -119,6 +119,12 @@
           "name": "Manage Operational Observations",
           "description": "Capture, classify and follow up operational observations, transforming identified issues, quality risks and improvement ideas into actionable outcomes.",
           "status": "in_development"
+        },
+        {
+          "id": "d3c6",
+          "name": "Manage Property Stakeholder Relations",
+          "description": "Coordinate property-related interactions, issues and actions involving condominium administrations, neighbors and other local stakeholders.",
+          "status": "existing"
         }
       ]
     },
@@ -161,28 +167,33 @@
       "capabilities": [
         {
           "id": "d5c1",
-          "name": "Revenue Records",
+          "name": "Manage Financial Transactions",
+          "description": "Record, classify and reconcile property-related revenues, expenses, payments and financial transactions.",
           "status": "existing"
         },
         {
           "id": "d5c2",
-          "name": "Expenses & Accounting",
+          "name": "Manage Owner Accounts & Balances",
+          "description": "Maintain owner financial accounts, tracking property revenues, expenses, commissions, payments and outstanding balances.",
           "status": "existing"
         },
         {
           "id": "d5c3",
-          "name": "Owner Reporting",
-          "status": "in_development"
-        },
-        {
-          "id": "d5c4",
-          "name": "ADR & Occupancy Analytics",
+          "name": "Manage Fiscal & Regulatory Obligations",
+          "description": "Calculate, monitor and support property-related fiscal and regulatory reporting obligations, including tourist taxes and statutory declarations.",
           "status": "existing"
         },
         {
+          "id": "d5c4",
+          "name": "Manage Pricing & Commercial Strategy",
+          "description": "Define and manage pricing policies, distribution strategies and commercial decisions to optimize occupancy, revenue and property positioning.",
+          "status": "in_development"
+        },
+        {
           "id": "d5c5",
-          "name": "Commercial Intelligence",
-          "status": "conceptual"
+          "name": "Analyze Business Performance",
+          "description": "Analyze property revenue, occupancy, booking patterns, guest segments and financial performance to support management decisions.",
+          "status": "existing"
         }
       ]
     },
