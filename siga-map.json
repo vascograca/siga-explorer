@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -25,7 +25,7 @@
         {
           "id": "d1c1",
           "name": "Manage Property Information & Knowledge",
-          "description": "Maintain structured property information, operational context and historical knowledge, including condominium matters, incidents, decisions and their outcomes.",
+          "description": "Maintain structured property facts and historical records, including condominium matters, incidents, documents, decisions and outcomes, as a reliable source of property knowledge.",
           "status": "existing"
         },
         {
@@ -43,7 +43,7 @@
         {
           "id": "d1c4",
           "name": "Manage Consumables",
-          "description": "Define, track and replenish consumable supplies required for property operations and guest stays.",
+          "description": "Maintain information about consumable supplies, stock levels and replenishment needs for property operations and guest stays.",
           "status": "conceptual"
         },
         {
@@ -130,7 +130,7 @@
         {
           "id": "d4c1",
           "name": "Manage Stories & Context",
-          "description": "Maintain connected histories of people, properties, stays and situations, preserving relevant context, decisions, rationale and outcomes.",
+          "description": "Connect existing information into meaningful histories of people, properties, stays and situations, preserving relationship context, commitments, decision rationale and outcomes without duplicating source records.",
           "status": "in_development"
         },
         {
@@ -167,7 +167,7 @@
         {
           "id": "d5c3",
           "name": "Manage Fiscal & Regulatory Obligations",
-          "description": "Calculate, monitor and support property-related fiscal and regulatory reporting obligations, including tourist taxes and statutory declarations.",
+          "description": "Calculate, monitor and support fiscal and non-fiscal regulatory obligations related to property management and hospitality, including tourist taxes, statutory declarations and accommodation reporting.",
           "status": "existing"
         },
         {
