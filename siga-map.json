@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -198,27 +198,26 @@
       "capabilities": [
         {
           "id": "d6c1",
-          "name": "Beds24",
+          "name": "Integrate Channel Management Systems",
+          "description": "Exchange reservation, availability and channel information with external channel management platforms.",
           "status": "in_development"
         },
         {
           "id": "d6c2",
-          "name": "PriceLabs",
+          "name": "Integrate Dynamic Pricing Systems",
+          "description": "Connect with external pricing optimization services to exchange pricing recommendations, rules and related commercial information.",
           "status": "in_development"
         },
         {
           "id": "d6c3",
-          "name": "Airbnb / VRBO Channels",
+          "name": "Integrate Website & Digital Content",
+          "description": "Make property information, media and related digital content available to websites and other presentation channels.",
           "status": "in_development"
         },
         {
           "id": "d6c4",
-          "name": "WordPress Media",
-          "status": "in_development"
-        },
-        {
-          "id": "d6c5",
-          "name": "External APIs",
+          "name": "Integrate External Services & APIs",
+          "description": "Exchange information with external services, public authorities and specialized platforms through supported APIs.",
           "status": "conceptual"
         }
       ]
