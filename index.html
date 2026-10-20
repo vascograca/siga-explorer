@@ -26,5 +26,5 @@ domains.forEach(d=>{
 });
 if(!count)body.append(E('p','No capabilities match the selected filters.'));
 }show()}
-fetch('./siga-map.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{model=d;document.getElementById('footer').textContent=d.status_note;render()}).catch(e=>{view.textContent='Unable to load siga-map.json: '+e.message});
+fetch('./siga-map.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{model=d;document.getElementById('footer').textContent=d.status_note;render()}).catch(e=>{view.textContent='Unable to load siga-map.json: '+e.message});
 </script></body></html>
