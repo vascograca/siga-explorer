@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -124,33 +124,26 @@
     },
     {
       "id": "d4",
-      "name": "StoryHub",
+      "name": "Stories & Relationships",
       "layer": "intelligence",
       "capabilities": [
         {
           "id": "d4c1",
-          "name": "Communication Templates",
-          "status": "existing"
+          "name": "Manage Stories & Context",
+          "description": "Maintain connected histories of people, properties, stays and situations, preserving relevant context, decisions, rationale and outcomes.",
+          "status": "in_development"
         },
         {
           "id": "d4c2",
-          "name": "Context Model",
+          "name": "Manage Contextual Communication",
+          "description": "Prepare, personalize and follow up communications with guests, owners and partners based on relationship history, current circumstances and interaction purpose.",
           "status": "in_development"
         },
         {
           "id": "d4c3",
-          "name": "Story Anatomy",
-          "status": "conceptual"
-        },
-        {
-          "id": "d4c4",
-          "name": "Decision Memory",
-          "status": "conceptual"
-        },
-        {
-          "id": "d4c5",
-          "name": "Contextual Communication Agent",
-          "status": "conceptual"
+          "name": "Support Contextual Decisions & Actions",
+          "description": "Support situation-aware decisions and next steps, considering goals, commitments, precedents and consequences while leveraging operational capabilities for execution.",
+          "status": "in_development"
         }
       ]
     },
