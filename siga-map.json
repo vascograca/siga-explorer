@@ -1,6 +1,6 @@
 {
   "model": "SIGA Knowledge Model",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "status_note": "Public prototype. Maturity labels are provisional, not verified production status.",
   "layers": [
     {
@@ -25,7 +25,7 @@
         {
           "id": "d1c1",
           "name": "Manage Property Information & Knowledge",
-          "description": "Maintain structured information and contextual knowledge about each property, including its characteristics, spaces and relevant history.",
+          "description": "Maintain structured property information, operational context and historical knowledge, including condominium matters, incidents, decisions and their outcomes.",
           "status": "existing"
         },
         {
@@ -119,12 +119,6 @@
           "name": "Manage Operational Observations",
           "description": "Capture, classify and follow up operational observations, transforming identified issues, quality risks and improvement ideas into actionable outcomes.",
           "status": "in_development"
-        },
-        {
-          "id": "d3c6",
-          "name": "Manage Property Stakeholder Relations",
-          "description": "Coordinate property-related interactions, issues and actions involving condominium administrations, neighbors and other local stakeholders.",
-          "status": "existing"
         }
       ]
     },
